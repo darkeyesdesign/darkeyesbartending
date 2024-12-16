@@ -1,0 +1,239 @@
+/* COLORs */
+/* $logo: #20243f */
+/* #20243F FURPLE */
+/* #F9F6EE BONE WHITE */
+/* #78c1c1 LIGHT TEAL */
+/* #708090 SLATE GRAY */
+
+/* FONTS */
+.italiana-regular {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* TAGS */
+h1, h2, h3 {
+	font-family: "Italiana", sans-serif;
+}
+a {
+/*  color: #080B20;*/
+  color: #F9F6EE;
+  font-weight: 300;
+	text-decoration: none;
+}
+a:visited {
+}
+a:hover {
+}
+
+/* PAGES */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #F9F6EE;
+	color: black;
+/*	color: #F9F6EE; *//* BONE */
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  margin: 0 auto;
+  max-width: 65rem;
+  min-width: 30rem;
+}
+.main_container {
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+	.main__title, .main__content {
+		display: flex;
+/*		background-color: #708090;*/
+/*		background-color: #20243F; *//* PURPLE */
+		justify-content: center;
+	}
+	.main__title {
+		font-size: 3rem; 
+		padding-top: 6rem;
+	}
+	.main__content {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+		.content__serving, .content__inquiries {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.content__serving {
+				justify-content: center;
+		}
+			.content__serving p {
+				text-align: center;
+				padding: 4rem 2rem 2rem 1rem;
+				margin: 2rem;
+			}
+		.content__inquiries {
+			justify-content: center;
+			padding: 0rem 2rem 3rem 2rem;
+		}
+			.content__inquiries img {
+				width: 28rem;
+				height: 20rem;
+  			border-radius: 50%;
+  			align-items: center;
+				text-align: center;
+				padding: 3rem 10rem 2rem 11rem;	
+			}
+
+.header {
+	background-color: #20243F; 
+	color: #F9F6EE;
+}
+.footer_container {
+	background-color: #F9F6EE; 
+}
+.header, .footer_container {
+/*	background-color: #78c1c1; *//* TEAL */
+	display: flex;
+	font-family: "Italiana", sans-serif;
+	justify-content: center;
+}
+.footer_container {
+  border-top: 0.2rem solid #000000;
+  padding: 4rem 0 3rem 0;
+}
+.header {
+  margin-top: 0;
+  padding: 2rem 2rem 3rem 2rem; 
+  width: auto;
+}
+ul.contact_form {
+/*	background-color: #20243F; *//* PURPLE */
+	list-style: none;
+}
+ul.contact_form li a {
+	color: black; 
+}
+.bootstrap-form {
+	padding: 0rem 0rem 10rem 0rem;
+}
+
+/*LAPTOPS*/
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .main_container {
+      width: auto 0;
+			height: 100%;
+    }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    .youtube-video {
+    }
+}
+
+/*iPHONES*/
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .youtube-video {
+    }
+  }
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+		body {
+			width: 100%;
+			width: 100%;
+		}
+		.header {
+			padding: 2rem 0rem 2rem 0rem;
+		}
+    .footer_container {
+			position: fixed;
+			width: 100%;
+			padding: 2rem 0rem 2rem 0rem;
+			bottom: 0px;
+		}
+		.content__serving p, .content__inquiries img {
+			padding: 0rem;
+    }
+		.content__inquiries img {
+			padding-bottom: 8rem;
+		}
+		.content__inquiries {
+			padding: 1rem;
+		}
+		.main__title {
+			padding: 0rem;
+			font-size: 2rem;	
+		}
+}
+/*iPHONES*/
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+		body {
+			width: 100%;
+			width: 100%;
+		}
+		.header {
+			padding: 2rem 0rem 2rem 0rem;
+		}
+    .footer_container {
+			position: fixed;
+			width: 100%;
+			padding: 2rem 0rem 2rem 0rem;
+			bottom: 0px;
+		}
+		.content__serving p, .content__inquiries img {
+			padding: 0rem;
+    }
+		.content__inquiries {
+			padding: 1rem;
+		}
+		.content__inquiries img {
+			padding-bottom: 8rem;
+		}
+		.main__title {
+			padding: 0rem;
+			font-size: 2rem;	
+		}
+  }
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .youtube-video {
+    }
+}
+
